@@ -1,0 +1,20 @@
+.main-pro-container {
+  margin-top: 64px;
+}
+
+.view {
+  background: url("/assets/images/img (130).jpg")no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.my-logo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+
+  small {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    padding-left: 5px;
+  }
+}
