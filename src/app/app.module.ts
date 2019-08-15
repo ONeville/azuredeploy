@@ -6,16 +6,21 @@ import { ButtonsModule, WavesModule, CardsModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PAGES } from './pages';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PAGES],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
     ButtonsModule,
     WavesModule,
-    CardsModule
+    CardsModule,
+    PDFExportModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,149 @@
+  <div class="container">
+
+    <div class="row my-5">
+      <div class="col-8 py-2 border">
+        <div class="marquee">
+          <h1>The cat and the hat.</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row my-4">
+      <div class="col-12 col-md-8 text-center">
+        <mdb-card>
+          <mdb-card-body>
+            <mdb-card-title>
+              <h5 class="font-weight-bold mb-3">Panel title</h5>
+            </mdb-card-title>
+            <mdb-card-text class="mb-0">Some quick example text to build on the panel title and make up the bulk of the
+              panel's
+              content</mdb-card-text>
+
+            <div class="img-fluid">
+              <video class="video-fluid" controls>
+                <source src="assets/video/965082-EWmLzlW7V.mp4" type="video/mp4" />
+              </video>
+              <div class="mask rgba-indigo-light waves-light" mdbWavesEffect></div>
+            </div>
+
+          </mdb-card-body>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+          </ul>
+          <mdb-card-body>
+            <!-- autoplay -->
+            <audio controls>
+              <source src="assets/video/A_Golgotha.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="assets/images/img (132).jpg" alt="" srcset="" class="img-fluid mb-2">
+        <img src="assets/images/img (137).jpg" alt="" srcset="" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <p align="justify">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-5">
+        <nav class="navbar navbar-dark primary-color">
+          <a class="navbar-brand text-white" (click)="pdf.saveAs('demo-content.pdf')">
+            <i class="fas fa-file-pdf mr-2"></i>Export As PDF</a>
+        </nav>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 export-doc">
+        <kendo-pdf-export #pdf paperSize="A4" margin="1.6cm">
+          <div class="header">
+            Blauer See Delikatessen
+          </div>
+
+          <div class="address">
+            <div class="for">
+              <h3>Invoice For</h3>
+              <p>
+                Antonio Moreno<br /> Naucalpan de Juárez<br /> México D.F., Mexico, 53500
+              </p>
+            </div>
+
+            <div class="from">
+              <h3>From</h3>
+              <p>
+                Hanna Moos <br /> Lützowplatz 456<br /> Berlin, Germany, 10785
+              </p>
+            </div>
+          </div>
+
+          <div class="items">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="signature">
+            Signature: ________________
+          </div>
+
+          <p class="signature-note">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis
+            aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.</p>
+
+        </kendo-pdf-export>
+      </div>
+    </div>
+
+  </div>

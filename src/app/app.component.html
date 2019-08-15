@@ -1,15 +1,17 @@
-<router-outlet></router-outlet>
-
 <header class="h-100">
-  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark aqua-gradient scrolling-navbar intro-fixed-nav"
+  <!-- navbar fixed-top navbar-expand-lg navbar-dark aqua-gradient scrolling-navbar intro-fixed-nav -->
+  <mdb-navbar SideClass="navbar navbar-1 navbar-light fixed-top aqua-gradient lighten-2"
     [containerInside]="false">
     <mdb-navbar-brand>
-      <a class="logo navbar-brand my-logo" href="#"><strong>ME PRO</strong><small>The best</small></a>
+      <a class="logo navbar-brand my-logo text-white" href="#"><strong>ME PRO</strong><small>The best</small></a>
     </mdb-navbar-brand>
     <links>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active waves-light" mdbWavesEffect>
-          <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link" routerLink="/test-01">Tester 0-1 </a>
         </li>
       </ul>
     </links>
@@ -32,63 +34,7 @@
   </div> -->
 </header>
 
-<main class="text-center py-5 main-pro-container">
 
-  <div class="container">
-
-    <div class="row my-4">
-      <div class="col-12 col-md-8">
-        <mdb-card>
-          <mdb-card-body>
-            <mdb-card-title>
-              <h5 class="font-weight-bold mb-3">Panel title</h5>
-            </mdb-card-title>
-            <mdb-card-text class="mb-0">Some quick example text to build on the panel title and make up the bulk of the
-              panel's
-              content</mdb-card-text>
-
-            <div class="img-fluid">
-              <video class="video-fluid">
-                <source src="assets/video/965082-EWmLzlW7V.mp4" type="video/mp4" />
-              </video>
-              <div class="mask rgba-indigo-light waves-light" mdbWavesEffect></div>
-            </div>
-
-          </mdb-card-body>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-          </ul>
-          <mdb-card-body>
-            <audio controls autoplay>
-              <source src="assets/video/A_Golgotha.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </mdb-card-body>
-        </mdb-card>
-      </div>
-      <div class="col-12 col-md-4">
-        <img src="assets/images/img (132).jpg" alt="" srcset="" class="img-fluid mb-2">
-        <img src="assets/images/img (137).jpg" alt="" srcset="" class="img-fluid">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-
-        <p align="justify">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
-
-      </div>
-    </div>
-
-  </div>
-
+<main class="py-5 main-pro-container">
+  <router-outlet></router-outlet>
 </main>
-

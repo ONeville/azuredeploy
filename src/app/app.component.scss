@@ -18,3 +18,95 @@
     padding-left: 5px;
   }
 }
+
+// color: limegreen;
+.marquee {
+  // height: 30px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  color: limegreen;
+
+  h1 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 20s linear infinite;
+    -webkit-animation: scroll-left 20s linear infinite;
+    animation: scroll-left 20s linear infinite;
+  }
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(90%);
+    -webkit-transform: translateX(90%);
+    transform: translateX(90%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+
+.export-doc {
+  kendo-pdf-export {
+    // font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 12px;
+  }
+
+  .header {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+    color: #3aabf0;
+  }
+
+  .address {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+  }
+
+  .from p,
+  .for p {
+    color: #787878;
+  }
+
+  .signature {
+    padding-top: 36px;
+  }
+
+  .signature-note {
+    margin-top: 18px;
+    font-size: 10px;
+    text-align: justify;
+  }
+}
