@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule, CardsFreeModule } from 'angular-bootstrap-md';
 // MDB Angular Pro
-import { ButtonsModule, WavesModule, CardsModule } from 'angular-bootstrap-md';
+import { ButtonsModule, WavesModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +18,7 @@ import { PAGES } from './pages';
     MDBBootstrapModule.forRoot(),
     ButtonsModule,
     WavesModule,
-    CardsModule,
+    CardsFreeModule,
     PDFExportModule,
     BrowserAnimationsModule
   ],
