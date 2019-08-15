@@ -29,7 +29,13 @@
     "zone.js": "~0.9.1",
     "@progress/kendo-angular-common": "^1.0.0",
     "@progress/kendo-drawing": "^1.2.0",
-    "@progress/kendo-theme-default": "latest"
+    "@progress/kendo-theme-default": "latest",
+    "@angular-devkit/build-angular": "~0.802.1",
+    "@angular/cli": "~8.2.1",
+    "@angular/compiler-cli": "~8.2.0",
+    "ts-node": "~7.0.0",
+    "typescript": "~3.5.3"
+
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.802.1",
