@@ -9,12 +9,18 @@ import { AppComponent } from './app.component';
 import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PAGES } from './pages';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ShowCodeComponent } from './shared/components/show-code/show-code.component';
 
 @NgModule({
-  declarations: [AppComponent, PAGES],
+  declarations: [AppComponent, PAGES, ShowCodeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     MDBBootstrapModule.forRoot(),
     ButtonsModule,
     WavesModule,
@@ -23,6 +29,7 @@ import { PAGES } from './pages';
     BrowserAnimationsModule
   ],
   providers: [],
+  entryComponents: [ShowCodeComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
